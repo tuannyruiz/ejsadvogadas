@@ -5,8 +5,8 @@
  */
 require_once('header.php');  ?>
 
-<main class="sobre-nos">
-    <div class="sobre-nos-container">
+<main class="sobre-nos profile">
+    <div class="profile-container">
       <h1 class="titulo-mobile"><?php echo get_the_title() ?></h1>
       <div class="advogada-foto">
       <?php if ( has_post_thumbnail() ) {
