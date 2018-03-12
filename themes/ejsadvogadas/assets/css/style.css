@@ -1,6 +1,6 @@
 /* FONTES */
 
-@font-face {
+/* @font-face {
   font-family: 'Brandon Grotesque';
   src: url("../fonts/fonts/brandon/Brandon_med.otf") format("opentype");
 }
@@ -15,12 +15,43 @@
   font-family: 'Brandon Grotesque';
   font-weight: 700;
   src: url("../fonts/fonts/brandon/Brandon_bld.otf") format("opentype");
+} */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  src: url("../fonts/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url("../fonts/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/fonts/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url("../fonts/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: url("../fonts/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");;
 }
 
 /* ESTILOS GERAL */
 
 body {
-  font-family: 'Brandon Grotesque';
+  font-family: 'Montserrat';
   margin: 0;
   padding: 0;
 }
@@ -32,7 +63,7 @@ a:hover {
 h1.titulo,
 h1.titulo-mobile {
   color: #710000;
-  font-size: 4.2em;
+  font-size: 3.214em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -83,7 +114,7 @@ h3, h4 {
 
   h1.titulo,
   h1.titulo-mobile {
-    font-size: 3em !important;
+    font-size: 2.2em;
   }
 }
 
@@ -228,7 +259,7 @@ main.pagina-inicial {
 
 main.pagina-inicial h2 {
   color: #fff;
-  font-size: 4em;
+  font-size: 3.571em;
   font-weight: 700;
   margin-bottom: 0.5em;
   margin-top: 8em;
@@ -340,6 +371,10 @@ main.pagina-inicial h2 {
     padding-right:15px;
     padding-left:15px;
     width:1170px;
+  }
+
+  .sobre-nos-container {
+    padding-top: 0;
   }
 
   .advogada-bio .titulo {
@@ -580,7 +615,9 @@ main.pagina-inicial h2 {
   border: 2px solid #fff;
   border-radius: 50%;
   display: block;
+  height: 200px;
   margin: 0 auto 40px;
+  width: 200px;
 }
 
 .depoimentos-carrossel h2,

@@ -26,7 +26,7 @@ function handleMsg() {
             echo '<h3 class="alert-success">Mensagem enviada com sucesso!</h3>';
         }
         ?>
-        <p class="intro">Através dessa caixa de mensagens você pode fazer seu primeiro contato com nosso escritório. Preencha o formulário e clique em "Enviar Mensagem".</p>
+        <p class="intro">Através dessa caixa de mensagens você pode fazer seu contato com nosso escritório.</p>
         <form class="form-contato" action="<?php echo get_permalink($post->id) ?>" method="POST">
             <input type="text" name="nome" placeholder="Nome" required="required">
             <input type="email" name="email" placeholder="E-mail" required="required">
