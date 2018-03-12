@@ -1,22 +1,5 @@
 /* FONTES */
 
-/* @font-face {
-  font-family: 'Brandon Grotesque';
-  src: url("../fonts/fonts/brandon/Brandon_med.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Brandon Grotesque';
-  font-weight: 100;
-  src: url("../fonts/fonts/brandon/Brandon_light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Brandon Grotesque';
-  font-weight: 700;
-  src: url("../fonts/fonts/brandon/Brandon_bld.otf") format("opentype");
-} */
-
 @font-face {
   font-family: 'Montserrat';
   font-weight: 100;
@@ -112,9 +95,18 @@ h3, h4 {
     font-size: 2.5em !important;
   }
 
+  main.pagina-inicial .btn-adv {
+    font-size: 1.5em;
+  }
+
   h1.titulo,
   h1.titulo-mobile {
     font-size: 2.2em;
+  }
+
+  h1.titulo::after,
+  h1.titulo-mobile {
+    width: 100px;
   }
 }
 
@@ -191,6 +183,7 @@ nav .navbar-collapse {
   .navbar-brand img {
     height: 150px;
     margin-top: -100px;
+    margin-left: -30px;
   }
 }
 
@@ -783,7 +776,6 @@ footer img {
 
 .copyright {
   text-align: center;
-  padding: 2em 15px 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -794,5 +786,12 @@ footer img {
 
   footer .endereco p:last-child {
     margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer p,
+  .copyright {
+    font-size: 0.8em;
   }
 }
