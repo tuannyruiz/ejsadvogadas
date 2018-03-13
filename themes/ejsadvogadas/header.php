@@ -28,8 +28,9 @@
           <span class="tel"><i class="zmdi zmdi-phone"></i> (21) 2210-5167</span>
           <span class="email"><i class="zmdi zmdi-email"></i> contato@ejsadvogadas.com.br</span>
           <span class="pipe">|</span>
-          <a class="instagram" href="https://www.instagram.com/ejsadvogadas"><i class="zmdi zmdi-instagram"></i></a>
-          <a class="facebook" href="https://m.facebook.com/EJS-Advogadas-2017292118595519/"><i class="zmdi zmdi-facebook"></i></a>
+          <a class="instagram" target="_blank" href="https://www.instagram.com/ejsadvogadas"><i class="zmdi zmdi-instagram"></i></a>
+          <a class="facebook" target="_blank" href="https://m.facebook.com/EJS-Advogadas-2017292118595519/"><i class="zmdi zmdi-facebook"></i></a>
+          <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UC26jf0yb8VoOtm0DxRnYnnw?view_as=subscriber/"><i class="zmdi zmdi-youtube"></i></a>
         </p>
       </div>
     </div>
