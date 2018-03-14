@@ -32,13 +32,13 @@ require_once('header.php');  ?>
 				</div>
 			</div>
 		</div>
-		<div class="row cards">
+		<div class="row cards col-container">
 		
 		
 		<?php
 		
 		function offset($index) {
-			 if ($index == 1 || $index % 6 == 0) {
+			 if ($index == 1) {
 				 return 'col-lg-offset-1';
 			 }
 		};
@@ -52,7 +52,7 @@ require_once('header.php');  ?>
 			?>
      
 
-			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 <?php echo offset($count) ?>">
+			<div class="card-custom col-lg-2 col-md-3 col-sm-6 col-xs-12 <?php echo offset($count) ?>">
 				<div class="atuacao-card">
 
 					<img src="<?php echo $r_img_src[0] ?>" alt="" />
@@ -61,9 +61,44 @@ require_once('header.php');  ?>
 				</div>
 			</div>
 		
-			<?php 	$count++; } ?>
+			<?php 	
+			
+			if($count == 5) {
+				$count = 1;
+			} else {
+				$count++;
+			}
+		} ?>
 		</div>
 	</div>
 </main>
+
+<script>
+
+var cards =document.querySelectorAll(".card-custom .atuacao-card");
+if(window.innerWidth > 800) {
+
+var maxSize = 0;
+var objs = [];
+for(var i=0, j=1; i<cards.length; i++, j++) {
+  var el = cards[i];
+  
+  if(el.offsetHeight > maxSize) {
+    maxSize = el.offsetHeight;
+  }
+  objs.push(el);
+
+  if(j == 5) {
+    for(var r = 0; r < objs.length; r++) {
+      objs[r].style.height = maxSize + "px";
+      console.log(maxSize);
+    }
+  maxSize = 0;
+  objs = [];
+  j=0;
+  }
+}
+}
+</script>
 
 <?php get_footer(); ?>
