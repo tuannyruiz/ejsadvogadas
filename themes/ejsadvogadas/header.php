@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="<?= $home; ?>/assets/slick/slick-theme.css">  
   <link rel="stylesheet" href="<?= $home; ?>/assets/slick/slick.css">  
   <link rel="stylesheet" href="<?= $home; ?>/assets/fonts/css/material-design-iconic-font.min.css">  
-    <link rel="stylesheet" href="<?= $home; ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?= $home; ?>/assets/css/style.css?time=<?php echo time(); ?>">
   <title>
     <?php the_title(); ?>
     <?if( !is_home() ) echo ' | '; ?> 
