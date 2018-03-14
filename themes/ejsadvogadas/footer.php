@@ -6,6 +6,7 @@
           <p>Avenida Rio Branco, 185, sala 820</p>
           <p>Edifício Marquês do Herval - Centro</p>
           <p>Rio de Janeiro - CEP 20040-007</p>
+          <p><i class="zmdi zmdi-phone"></i> (21) 2210-5167</p>
         </div>
         <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-1">
           <a href="<?php echo get_home_url() ?>"><img src="<?= $home; ?>/assets/img/logo.png" alt="Logo da EJS Advogadas"></a>

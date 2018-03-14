@@ -6,18 +6,19 @@
 require_once('header.php');  ?>
 
 <style>
-    .depoimentos {
-      background: linear-gradient( rgba(113, 0, 0, 0.5),
-       rgba(113, 0, 0, 0.5) ), 
-       url('<?php echo fullThumbnailUrl($post->id)  ?>') no-repeat center;
-      background-size: cover;
-      padding: 40px 0;
-    } 
+  .depoimentos {
+    background: linear-gradient( rgba(113, 0, 0, 0.5),
+      rgba(113, 0, 0, 0.5) ), 
+      url('<?php echo fullThumbnailUrl($post->id)  ?>') no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+  } 
 
   @media only screen and (max-width: 460px) {
     .depoimentos {
       background-position: top;
       background-size: contain;
+      height: 100%;
     }
 
     .depoimentos-carrossel p, 

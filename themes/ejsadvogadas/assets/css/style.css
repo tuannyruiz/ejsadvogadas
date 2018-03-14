@@ -93,7 +93,8 @@ h3, h4 {
 
 @media only screen and (max-width: 600px) {
   main.pagina-inicial h2 {
-    font-size: 2.5em !important;
+    font-size: 2.3em !important;
+    margin-top: 13em !important;
   }
 
   main.pagina-inicial .btn-adv {
@@ -294,12 +295,13 @@ main.pagina-inicial h2 {
 
 .advogada-bio {
   justify-self: start;
-  padding: 40px 15px;
+  padding: 40px 0;
   padding-bottom: 0px;
 }
 
 .missao p,
 .advogada-bio p {
+  color: #7d7d80;
   font-size: 1.358em;
   font-weight: 300;
 }
@@ -327,6 +329,7 @@ main.pagina-inicial h2 {
 }
 
 .advogada-texto {
+  color: #7d7d80;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -627,13 +630,14 @@ main.pagina-inicial h2 {
 .depoimentos-carrossel p {
   color: #fff;
   font-size: 2em;
+  font-size: 300;
   text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
    .depoimentos-carrossel h2,
    .depoimentos-carrossel p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -768,6 +772,15 @@ main.pagina-inicial h2 {
     width: 100%;
   }
 }
+
+
+@media only screen and (max-width: 575px) {
+  .form-contato input[name="nome"],
+  .form-contato input[name="email"] {
+    width: 100%;
+  }
+}
+
 
 /* FOOTER */
 
