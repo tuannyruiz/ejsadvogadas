@@ -597,6 +597,7 @@ main.pagina-inicial h2 {
 .depoimentos {
   background: linear-gradient( rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1453945619913-79ec89a82c51?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b7a043b4a4d259543a830e670a3f54c&auto=format&fit=crop&w=1950&q=80') no-repeat center;
   background-size: cover;
+  height: 800px;
   padding: 40px 0; 
 }
 
@@ -609,6 +610,7 @@ main.pagina-inicial h2 {
 }
 
 .depoimentos-carrossel {
+  margin-top: 10em;
   padding: 5em 0;
 }
 

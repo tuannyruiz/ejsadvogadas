@@ -13,6 +13,18 @@ require_once('header.php');  ?>
       background-size: cover;
       padding: 40px 0;
     } 
+
+  @media only screen and (max-width: 460px) {
+    .depoimentos {
+      background-position: top;
+      background-size: contain;
+    }
+
+    .depoimentos-carrossel p, 
+    .depoimentos-carrossel h2 {
+      color: #2A2A2A !important;
+    }
+  }
 </style>
 
 <main class="depoimentos">
