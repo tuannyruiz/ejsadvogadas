@@ -477,7 +477,7 @@ main.pagina-inicial h2 {
 }
 
 .atuacao h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .atuacao h3::after,
@@ -497,7 +497,7 @@ main.pagina-inicial h2 {
 @media only screen and (min-width: 992px) {
   .atuacao .atuacao-card {
     box-shadow: 5px 5px 10px 0px #dbdbdb;
-    min-height: 180px;
+    min-height: 280px;
   }
 }
 
@@ -603,11 +603,12 @@ main.pagina-inicial h2 {
   background: linear-gradient( rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1453945619913-79ec89a82c51?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b7a043b4a4d259543a830e670a3f54c&auto=format&fit=crop&w=1950&q=80') no-repeat center;
   background-size: cover;
   height: 800px;
-  padding: 40px 0; 
+  padding: 30px 0 40px; 
 }
 
 .depoimentos h1.titulo {
   color: #fff;
+  margin-top: 0;
 }
   
 .depoimentos h1.titulo::after {
@@ -615,7 +616,7 @@ main.pagina-inicial h2 {
 }
 
 .depoimentos-carrossel {
-  margin-top: 10em;
+  margin-top: 12em;
   padding: 5em 0;
 }
 
@@ -628,7 +629,6 @@ main.pagina-inicial h2 {
   width: 200px;
 }
 
-.depoimentos-carrossel h2,
 .depoimentos-carrossel p {
   color: #fff;
   font-size: 2em;
@@ -636,10 +636,19 @@ main.pagina-inicial h2 {
   text-align: center;
 }
 
+.depoimentos-carrossel h1 {
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 100;
+}
+
 @media only screen and (max-width: 767px) {
-   .depoimentos-carrossel h2,
-   .depoimentos-carrossel p {
+  .depoimentos-carrossel p {
     font-size: 18px;
+  }
+
+  .depoimentos-carrossel h1 {
+    font-size: 16px;
   }
 }
 
@@ -712,7 +721,7 @@ main.pagina-inicial h2 {
   color: #7c7c80;
   display: block;
   font-size: 1.3em;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 30px;
 }
 
@@ -768,7 +777,6 @@ main.pagina-inicial h2 {
     margin-right: 3%;
   }
 
-
   .form-contato input[name="telefone"],
   .form-contato textarea {
     width: 100%;
@@ -819,6 +827,7 @@ footer img {
 
 footer .sociais {
   display: none;
+  z-index: 10;
 }
 
 .copyright {
@@ -837,6 +846,7 @@ footer .sociais {
 
   footer .sociais {
     display: block;
+    margin-top: 30px;
   }
 }
 

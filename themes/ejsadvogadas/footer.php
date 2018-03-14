@@ -7,6 +7,7 @@
           <p>Edifício Marquês do Herval - Centro</p>
           <p>Rio de Janeiro - CEP 20040-007</p>
           <p><i class="zmdi zmdi-phone"></i> (21) 2210-5167</p>
+          <p><i class="zmdi zmdi-email"></i> contato@ejsadvogadas.com.br</p>
         </div>
         <div class="sociais text-center col-xs-12">
           <a class="instagram" target="_blank" href="https://www.instagram.com/ejsadvogadas"><i class="zmdi zmdi-instagram"></i></a>

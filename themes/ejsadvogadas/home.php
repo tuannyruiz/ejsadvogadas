@@ -8,13 +8,10 @@ require_once('header.php');  ?>
 
 <style>
     main.pagina-inicial {
-  background: linear-gradient( rgba(113, 0, 0, 0.5),
-   rgba(113, 0, 0, 0.5) ),
-    url('<?php echo fullThumbnailUrl($post->id ) ?>')
-     no-repeat center;  
-     background-size: cover;  
-  height: 1000px;
-  min-height: 100vh;
+        background: linear-gradient(rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5)), url('<?php echo fullThumbnailUrl($post->id ) ?>') no-repeat center;  
+        background-size: cover;
+        height: 1000px;
+        min-height: 100vh;
     }
 </style>
 
