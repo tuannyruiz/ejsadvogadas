@@ -5,6 +5,16 @@
  */
 require_once('header.php');  ?>
 
+<style>
+    .depoimentos {
+      background: linear-gradient( rgba(113, 0, 0, 0.5),
+       rgba(113, 0, 0, 0.5) ), 
+       url('<?php echo fullThumbnailUrl($post->id)  ?>') no-repeat center;
+      background-size: cover;
+      padding: 40px 0;
+    } 
+</style>
+
 <main class="depoimentos">
 <section class="container">
   <h1 class="titulo"><?php echo get_the_title() ?></h1>
