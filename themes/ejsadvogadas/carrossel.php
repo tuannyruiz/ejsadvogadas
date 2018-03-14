@@ -24,7 +24,9 @@ require_once('header.php');  ?>
     $args = SCF::get( 'g_textos_imagens' );
     foreach ($args as &$value) { ?>
     <div>
-    <!-- <?php echo wp_get_attachment_image( $value['imagem'], array('200', '200'), "", array( "class" => "img-responsive" ) ); ?> -->
+    <?php /* echo wp_get_attachment_image( $value['imagem'], 
+    array('200', '200'), "", array( "class" => "img-responsive" ) ); */?> 
+    
     <p><?php echo $value['texto'] ?></p>
     </div>
     <?php } ?>
