@@ -7,6 +7,13 @@
       echo '<img src="'.$thumbnail[0].'" />';
     }
   }
+  function fullThumbnailUrl($postid) {
+    if ( has_post_thumbnail( $postid) ) {
+      $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $postid ), false );
+     return $thumbnail[0];
+    }
+  }
+
   function getFirstTag($postid) {
     $tags = wp_get_post_tags($postid);
     if(sizeof($tags) > 0) {
