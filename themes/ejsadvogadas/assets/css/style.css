@@ -220,8 +220,10 @@ nav .navbar-collapse {
   }
   
   .zmdi.zmdi-instagram,
-  .zmdi.zmdi-facebook {
+  .zmdi.zmdi-facebook,
+  .zmdi.zmdi-youtube {
     font-size: 1.8em !important;
+    color: #fff;
   }
 }
 
@@ -230,13 +232,13 @@ nav .navbar-collapse {
     height: 150px;
     margin-top: -140px;
   }
-}
 
-@media only screen and (max-width: 415px) {
   .top-menu {
     display: none;
   }
+}
 
+@media only screen and (max-width: 415px) {
   .navbar-brand img {
     height: 80px;
     margin-top: -30px;
@@ -815,6 +817,10 @@ footer img {
   margin-left: -100px;
 }
 
+footer .sociais {
+  display: none;
+}
+
 .copyright {
   text-align: center;
 }
@@ -827,6 +833,10 @@ footer img {
 
   footer .endereco p:last-child {
     margin-bottom: 2em;
+  }
+
+  footer .sociais {
+    display: block;
   }
 }
 
