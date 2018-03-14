@@ -34,7 +34,7 @@ $recent_posts = wp_get_recent_posts( $args );
               <div class="col-md-6">
                 <div class="noticia">
                 <a href="<?php echo get_permalink($recent["ID"]) ?>">
-                  <?php fullThumbnail($recent["ID"]);?>
+                  <?php echo get_the_post_thumbnail( $recent["ID"], array( 350, 200) )?>
                 </a>
                   <span class="tag">#<?php echo getFirstTag($recent["ID"]); ?></span>
                   <a href="<?php echo get_permalink($recent["ID"]) ?>">
@@ -47,14 +47,16 @@ $recent_posts = wp_get_recent_posts( $args );
          
           </div>
         </div>
+        
         <div class="col-md-4 lateral">
+        
         <?php
 	            foreach( array_slice($recent_posts, 2, 3) as $recent ){ ?>
           <div class="row">
             <div class="col-md-12">
             <div class="noticia">
             <a href="<?php echo get_permalink($recent["ID"]) ?>">
-               <?php fullThumbnail($recent["ID"]);?>
+               <?php echo get_the_post_thumbnail( $recent["ID"], array( 144, 82), true );?>
             </a>
             <span class="tag">#<?php echo getFirstTag($recent["ID"]); ?></span>
             <a href="<?php echo get_permalink($recent["ID"]) ?>">
@@ -66,13 +68,13 @@ $recent_posts = wp_get_recent_posts( $args );
           
         <?php } ?>
         </div>
-          
+          <div class="col-md-12">
           <?php
-	            foreach( array_slice($recent_posts, 3, sizeof($recent_posts)) as $recent ){ ?>
+	            foreach( array_slice($recent_posts, 5, sizeof($recent_posts)) as $recent ){ ?>
               <div class="col-md-4 destaque">
               <div class="noticia">
                   <a href="<?php echo get_permalink($recent["ID"]) ?>">
-                    <?php fullThumbnail($recent["ID"]);?>
+                    <?php  echo get_the_post_thumbnail( $recent["ID"], array( 350, 200), true );?>
                   </a>
                   <span class="tag">#<?php echo getFirstTag($recent["ID"]); ?></span>
                   <a href="<?php echo get_permalink($recent["ID"]) ?>">
@@ -81,6 +83,7 @@ $recent_posts = wp_get_recent_posts( $args );
               </div>
               </div>
           <?php } wp_reset_query(); ?>
+          </div>
        
       </div>
       
@@ -88,5 +91,3 @@ $recent_posts = wp_get_recent_posts( $args );
   </main>
 
 <?php get_footer(); ?>
-
-
