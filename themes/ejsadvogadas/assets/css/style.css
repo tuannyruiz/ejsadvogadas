@@ -624,7 +624,7 @@ main.pagina-inicial h2 {
 .depoimentos-carrossel h2,
 .depoimentos-carrossel p {
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -778,12 +778,19 @@ footer {
 }
 
 footer p.adv {
-  border-bottom: 1px solid #fff;
   margin-bottom: 1em;
 }
 
+footer p.adv::after {
+  content: '';
+  display: table;
+  width: 353px;
+  height: 1px;
+  background: #fff;
+}
+
 footer p {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 0.2em;
 }
 
@@ -811,6 +818,10 @@ footer img {
 @media only screen and (max-width: 500px) {
   footer p,
   .copyright {
-    font-size: 0.8em;
+    font-size: 0.85em;
+  }
+
+  footer p.adv::after {
+    width: 300px;
   }
 }
