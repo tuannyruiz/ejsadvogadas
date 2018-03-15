@@ -25,7 +25,7 @@ require_once('header.php');  ?>
 				<div class="atuacao-card">
 					<img class="img-destaque" src="<?php echo $cartao_topo_img_1[0] ?>"  />
           <img class="img-destaque" src="<?php echo $cartao_topo_img_2[0] ?>" alt="" />
-          <img class="img-destaque" src="<?php echo $cartao_topo_img_3[0] ?>" alt="" />
+          <img class="img-destaque--ultima" src="<?php echo $cartao_topo_img_3[0] ?>" alt="" />
 					
           <h3><?php echo $cartao_topo_title ?></h3>
           <?php echo $cartao_topo_desc ?>
