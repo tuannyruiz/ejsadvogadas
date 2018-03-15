@@ -468,8 +468,12 @@ main.pagina-inicial h2 {
 }
 
 .atuacao-card .img-destaque {
-  margin-right: 20px;
+  margin-right: 70px;
   max-height: 70px;
+}
+
+.atuacao-card .img-destaque--ultima {
+  max-height: 90px;
 }
 
 .atuacao-card img {
@@ -498,6 +502,15 @@ main.pagina-inicial h2 {
   .atuacao .atuacao-card {
     box-shadow: 5px 5px 10px 0px #dbdbdb;
     min-height: 280px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .atuacao-card .img-destaque {
+    margin-right: 20px;
+  }
+  .atuacao-card .img-destaque--ultima {
+    margin-right: 0;
   }
 }
 
