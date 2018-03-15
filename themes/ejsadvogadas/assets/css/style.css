@@ -616,8 +616,8 @@ main.pagina-inicial h2 {
 }
 
 .depoimentos-carrossel {
-  margin-top: 12em;
-  padding: 5em 0;
+  margin-top: 17em;
+  padding: 5em 0 0.5em;
 }
 
 .depoimentos-carrossel img {
@@ -649,6 +649,12 @@ main.pagina-inicial h2 {
 
   .depoimentos-carrossel h1 {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .depoimentos-carrossel {
+    margin-top: 13em;
   }
 }
 
