@@ -4,21 +4,17 @@
  * description: 
  */
 $topFix = true;
-require_once('header.php');
+require_once('header.php'); 
 $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ));
 ?>
 
 <style>
     main.pagina-inicial {
-        background: linear-gradient( rgba(113, 0, 0, 0.5),
-        rgba(113, 0, 0, 0.5) ),
-         url('<?php echo fullThumbnailUrl($post->id ) ?>')
-        no-repeat center;  
-        background-size: cover;  
-        height: 100%;
+        background: linear-gradient(rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5)), url('<?php echo fullThumbnailUrl($post->id ) ?>') no-repeat center;  
+        background-size: cover;
+        height: 1000px;
         min-height: 100vh;
     }
-
     @media only screen and (max-width: 767px) { 
 
         main.pagina-inicial {
@@ -29,9 +25,8 @@ $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ));
             background-size: cover;  
             height: 1000px;
             min-height: 100vh;
-            }
+        }
     }
-
 </style>
 
 <main class="pagina-inicial">

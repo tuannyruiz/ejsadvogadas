@@ -7,11 +7,9 @@ require_once('header.php');  ?>
 
 <style>
   .depoimentos {
-    background: linear-gradient( rgba(113, 0, 0, 0.5),
-      rgba(113, 0, 0, 0.5) ), 
-      url('<?php echo fullThumbnailUrl($post->id)  ?>') no-repeat center;
+    background: url('<?php echo fullThumbnailUrl($post->id)  ?>') no-repeat center;
     background-size: cover;
-    padding: 40px 0;
+    padding: 30px 0 40px;
   } 
 
   @media only screen and (max-width: 460px) {
@@ -22,8 +20,8 @@ require_once('header.php');  ?>
     }
 
     .depoimentos-carrossel p, 
-    .depoimentos-carrossel h2 {
-      color: #2A2A2A !important;
+    .depoimentos-carrossel h1 {
+      color: #7d7d80 !important;
     }
   }
 </style>
