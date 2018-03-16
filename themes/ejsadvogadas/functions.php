@@ -22,4 +22,9 @@
     return '';
     
   }
+  function add_custom_sizes() {
+    update_option( 'thumbnail_crop', 1 );
+    add_image_size( 'noticia', 768, 479, array( 'top', 'center')  );
+}
+add_action('after_setup_theme','add_custom_sizes');
 ?>

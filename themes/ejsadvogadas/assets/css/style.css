@@ -523,10 +523,14 @@ main.pagina-inicial h2 {
   padding: 40px 0;
 }
 
-.destaque .noticia img {
+.noticia img {
   border: 1px solid #000;
   max-height: 200px;
   width: 100%;
+}
+.lateral .noticia img {
+  max-height: 120px;
+  margin-bottom: 10px;
 }
 
 .destaque .noticia h3 {
@@ -570,6 +574,7 @@ main.pagina-inicial h2 {
   width: 50%;
 }
 
+
 @media only screen and (max-width: 991px) {
   .lateral .noticia h3,
   .destaque .noticia h3 {
@@ -596,6 +601,8 @@ main.pagina-inicial h2 {
   }
 }
 
+
+
 @media only screen and (max-width: 767px) {
   .lateral .noticia h3,
   .destaque .noticia h3 {
@@ -609,6 +616,9 @@ main.pagina-inicial h2 {
     font-size: 1.5em;
     margin: 20px 0 10px;
     width: 100%;
+  }
+  div.noticia img, div.lateral div.noticia img  {
+    max-height: 300px;
   }
 }
 
