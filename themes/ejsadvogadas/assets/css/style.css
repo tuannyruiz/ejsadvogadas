@@ -774,6 +774,11 @@ main.pagina-inicial h2 {
   padding-bottom: 30px;
 }
 
+.posts .btn-adv {
+  color: #710000;
+  border-color: #710000;
+}
+
 @media only screen and (max-width: 991px) {
   .contato {
     grid-template-columns: 1fr;

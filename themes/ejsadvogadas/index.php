@@ -8,6 +8,7 @@
             <?php the_content(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
+    <a href="<?php echo get_permalink(143) ?>" class="btn-adv">Voltar</a>
 </div>
     </section>
 </main>
