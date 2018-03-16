@@ -574,8 +574,17 @@ main.pagina-inicial h2 {
   width: 50%;
 }
 
+.destaque-4-12 {
+  margin-top: 20px;
+}
+
 
 @media only screen and (max-width: 991px) {
+
+  .destaque-4-12 {
+    margin-top: 0;
+  }  
+
   .lateral .noticia h3,
   .destaque .noticia h3 {
     margin-bottom: 50px;
@@ -599,6 +608,11 @@ main.pagina-inicial h2 {
     padding: 10px;
     width: 80%;
   }
+
+  div.noticia img, div.lateral div.noticia img  {
+    max-height: 500px;
+  }
+  
 }
 
 
@@ -618,7 +632,7 @@ main.pagina-inicial h2 {
     width: 100%;
   }
   div.noticia img, div.lateral div.noticia img  {
-    max-height: 300px;
+    max-height: 300px !important;
   }
 }
 

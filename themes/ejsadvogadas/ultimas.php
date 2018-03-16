@@ -68,7 +68,7 @@ $recent_posts = wp_get_recent_posts( $args );
           
         <?php } ?>
         </div>
-          <div class="col-md-12">
+          <div class="col-md-12  destaque-4-12">
           <div class="row">
           <?php
 	            foreach( array_slice($recent_posts, 5, sizeof($recent_posts)) as $recent ){ ?>
