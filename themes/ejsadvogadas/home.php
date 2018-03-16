@@ -12,11 +12,13 @@ $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ));
     main.pagina-inicial {
         background: linear-gradient(rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5)), url('<?php echo fullThumbnailUrl($post->id ) ?>') no-repeat center;  
         background-size: cover;
-        height: 1000px;
-        min-height: 100vh;
+        /* height: 1000px;
+        min-height: 100vh; */
+        height: 850px;
+        min-height: 80vh;
     }
-    @media only screen and (max-width: 767px) { 
 
+    @media only screen and (max-width: 767px) { 
         main.pagina-inicial {
             background: linear-gradient( rgba(113, 0, 0, 0.5),
             rgba(113, 0, 0, 0.5) ),
