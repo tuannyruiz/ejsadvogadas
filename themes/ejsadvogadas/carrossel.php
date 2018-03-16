@@ -32,13 +32,10 @@ require_once('header.php');  ?>
 
   <div class="depoimentos-carrossel">
     <?php
-    $args = SCF::get( 'g_textos_imagens' );
+    $args = SCF::get( 'g_textos_depoimentos' );
     foreach ($args as &$value) { ?>
-    <div>
-    <?php /* echo wp_get_attachment_image( $value['imagem'], 
-    array('200', '200'), "", array( "class" => "img-responsive" ) ); */?> 
-    
-    <p><?php echo $value['texto'] ?></p>
+    <div>    
+    <p><?php echo $value['texto_depoimento'] ?></p>
     </div>
     <?php } ?>
   </div>
