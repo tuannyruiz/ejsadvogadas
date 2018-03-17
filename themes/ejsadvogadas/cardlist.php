@@ -61,7 +61,7 @@ require_once('header.php');  ?>
 						<?php echo $r_txt ?>
 					</div>
 				</div>
-				<div class="modal fade modal-custom" tabindex="-1" role="dialog">
+				<div class="modal fade modal-custom modal-dialog-centered" tabindex="-1" role="dialog">
 				
 				<div class="modal-dialog" role="document">
     			<div class="modal-content">
