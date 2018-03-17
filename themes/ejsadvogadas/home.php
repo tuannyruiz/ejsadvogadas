@@ -18,15 +18,24 @@ $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ));
         min-height: 80vh;
     }
 
-    @media only screen and (max-width: 767px) { 
+    @media only screen and (max-width: 450px) { 
         main.pagina-inicial {
             background: linear-gradient( rgba(113, 0, 0, 0.5),
             rgba(113, 0, 0, 0.5) ),
             url('<?php echo $img_mobile[0] ?>')
             no-repeat center;  
             background-size: cover;  
-            height: 1000px;
-            min-height: 100vh;
+            height: 400px;
+            min-height: 40vh;
+        }
+
+        main.pagina-inicial h2 {
+            font-size: 1.8em !important;
+            margin-top: 6em !important;
+        }
+
+        main.pagina-inicial .btn-adv {
+            font-size: 1.2em;
         }
     }
 </style>
