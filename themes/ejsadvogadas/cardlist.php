@@ -49,17 +49,36 @@ require_once('header.php');  ?>
 			$r_img_src = wp_get_attachment_image_src($value['imagem'], false);
 			$r_txt = $value['texto'];
 			$r_title = $value['title'];
+			$r_description = $value['description'];
 			?>
      
 
 			<div class="card-custom col-lg-2 col-md-3 col-sm-6 col-xs-12 <?php echo offset($count) ?>">
-				<div class="atuacao-card">
+				<div class="card-container">
+					<div class="atuacao-card">
+						<img src="<?php echo $r_img_src[0] ?>" alt="" />
+						<h4><?php echo $r_title ?></h4>
+						<?php echo $r_txt ?>
+					</div>
+				</div>
+				<div class="modal fade modal-custom" tabindex="-1" role="dialog">
+				
+				<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<div class="modal-body">
+							<?php echo $r_description ?>
+							</div>
+						</div>
+					</div>
+				</div>
 
-					<img src="<?php echo $r_img_src[0] ?>" alt="" />
-					<h4><?php echo $r_title ?></h4>
-					<?php echo $r_txt ?>
 				</div>
 			</div>
+
 		
 			<?php 	
 			
@@ -91,7 +110,6 @@ for(var i=0, j=1; i<cards.length; i++, j++) {
   if(j == 5) {
     for(var r = 0; r < objs.length; r++) {
       objs[r].style.height = maxSize + "px";
-      console.log(maxSize);
     }
   maxSize = 0;
   objs = [];
@@ -100,5 +118,4 @@ for(var i=0, j=1; i<cards.length; i++, j++) {
 }
 }
 </script>
-
-<?php get_footer(); ?>
+<?php $customJs = "cardlist.js"; require_once('footer.php'); ?>

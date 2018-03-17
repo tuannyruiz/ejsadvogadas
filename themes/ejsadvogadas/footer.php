@@ -27,6 +27,7 @@
   <script type="text/javascript" src="<?= $home; ?>/assets/js/homepage.js"></script>
   <script type="text/javascript" src="<?= $home; ?>/assets/slick/slick.js"></script>
    <script type="text/javascript" src="<?= $home; ?>/assets/js/carrossel.js"></script>
+   <script type="text/javascript" src="<?= $home; ?>/assets/js/<?= $customJs;?>?time=<?php echo time(); ?>"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

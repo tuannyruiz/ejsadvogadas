@@ -448,6 +448,16 @@ main.pagina-inicial h2 {
 
 /* AREAS DE ATUAÇÃO */
 
+.modal-body {
+  width: 95%;
+}
+.button.close {
+  font-size: 25px;
+}
+.card-container {
+  cursor: pointer;
+}
+
 .atuacao {
   background: #F0EFF0;
   padding: 40px 0;
