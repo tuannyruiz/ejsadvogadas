@@ -10,9 +10,5 @@ $(document).ready(function(){
         $("nav.navbar-fixed-top").css('background-color', 'transparent');
       }
     });
-
-    $(".navbar-toggle").click(function() {
-      $("nav").css('background-color', '#710000 !important');
-    })
   });
   
