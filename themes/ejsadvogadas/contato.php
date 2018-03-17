@@ -16,6 +16,13 @@ function handleMsg() {
 };
 ?>
 
+<style>
+    .mapa {
+        background-image: url('<?= $home; ?>/assets/img/mapa.png');
+        background-size: cover;
+    }
+</style>
+
 <main class="contato">
     <div class="form">
         <h1 class="titulo">Contato</h1>
