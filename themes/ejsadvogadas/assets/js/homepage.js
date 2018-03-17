@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 
     $(".navbar-toggle").click(function() {
-      $(".navbar-collapse").css('background-color', '#710000');
+      $("nav").css('background-color', '#710000 !important');
     })
   });
   
