@@ -39,7 +39,7 @@ require_once('header.php');  ?>
 		
 		function offset($index) {
 			 if ($index == 1) {
-				 return 'col-lg-offset-1';
+				 return 'col-lg-offset-1 clearfix';
 			 }
 		};
 
