@@ -46,7 +46,7 @@ function handleMsg() {
             <button type="submit" class="btn-adv">Enviar Mensagem</button>
         </form>
     </div>
-    <div class="mapa">
+    <div class="mapa"> 
     <iframe
       width="100%"
      height="100%"
