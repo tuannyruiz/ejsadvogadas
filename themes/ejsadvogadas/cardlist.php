@@ -70,6 +70,7 @@ require_once('header.php');  ?>
 								<span aria-hidden="true">&times;</span>
 							</button>
 							<div class="modal-body">
+							<h1><?php echo $r_title ?></h1>
 							<?php echo $r_description ?>
 							</div>
 						</div>
