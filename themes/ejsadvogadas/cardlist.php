@@ -105,17 +105,10 @@ for(var i=0, j=1; i<cards.length; i++, j++) {
   if(el.offsetHeight > maxSize) {
     maxSize = el.offsetHeight;
   }
-  objs.push(el);
-
-  if(j == 5) {
-    for(var r = 0; r < objs.length; r++) {
+}
+for(var r = 0; r < objs.length; r++) {
       objs[r].style.height = maxSize + "px";
     }
-  maxSize = 0;
-  objs = [];
-  j=0;
-  }
-}
 }
 </script>
 <?php $customJs = "cardlist.js"; require_once('footer.php'); ?>
