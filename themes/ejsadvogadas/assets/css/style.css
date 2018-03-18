@@ -651,7 +651,8 @@ main.pagina-inicial h2 {
     margin-bottom: 50px;
   }
 
-  .lateral .noticia img, .outras-noticias .noticia img {
+  .lateral .noticia img, 
+  .outras-noticias .noticia img {
     max-width: 100%;
   }
 
@@ -670,10 +671,11 @@ main.pagina-inicial h2 {
     width: 80%;
   }
 
-  div.noticia img, div.lateral div.noticia img  {
-    max-height: 500px;
+  div.noticia img, 
+  div.lateral div.noticia img  {
+    max-height: 410px;
+    height: 100%;
   }
-  
 }
 
 @media only screen and (max-width: 767px) {
@@ -690,7 +692,9 @@ main.pagina-inicial h2 {
     margin: 20px 0 10px;
     width: 100%;
   }
-  div.noticia img, div.lateral div.noticia img  {
+
+  div.noticia img,
+  div.lateral div.noticia img  {
     max-height: 300px !important;
     object-fit: cover; 
     object-position: center; 
