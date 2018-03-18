@@ -10,7 +10,9 @@ $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ), false);
 
 <style>
     main.pagina-inicial {
-        background: linear-gradient(rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5)), url('<?php echo fullThumbnailUrl($post->id ) ?>') no-repeat center;  
+        background: linear-gradient(rgba(113, 0, 0, 0.5), 
+        rgba(113, 0, 0, 0.5)),
+         url('<?php echo fullThumbnailUrl($post->id ) ?>') no-repeat center;  
         background-size: cover;
         /* height: 1000px;
         min-height: 100vh; */
