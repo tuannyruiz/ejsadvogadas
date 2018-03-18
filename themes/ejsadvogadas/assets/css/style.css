@@ -476,6 +476,7 @@ main.pagina-inicial h2 {
 }
 
 .atuacao .atuacao-card {
+  cursor: pointer;
   background: #E8DEDF;
   margin-bottom: 30px;
   min-height: 70px;
