@@ -349,12 +349,6 @@ main.pagina-inicial h2 {
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .curriculo {
-    font-size: 1.1em;
-  }
-}
-
 @media only screen and (max-width: 1350px) {
   .profile-container,
   .sobre-nos-container {
@@ -403,21 +397,21 @@ main.pagina-inicial h2 {
   }
 }
 
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
   .profile-container,
   .sobre-nos-container {
     width:970px;
   }
 }
 
-@media (max-width: 991px){
+@media only screen and (max-width: 991px){
   .profile-container,
   .sobre-nos-container {
     width:750px;
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .profile-container,
   .sobre-nos-container {
     padding-right: 15px;
@@ -428,7 +422,14 @@ main.pagina-inicial h2 {
   }
 }
 
-@media (max-width: 680px) {
+@media only screen and (min-width: 681px) and (max-width: 740px) {
+  .advogada-bio .btn-adv {
+    font-size: 1.7em;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
   .advogada-bio .btn-adv {
     display: block;
     margin: 0 auto 20px;
@@ -437,7 +438,15 @@ main.pagina-inicial h2 {
   }
 }
 
-@media (max-width: 450px) {
+
+@media only screen and (max-width: 550px) {
+  .advogada-bio .btn-adv,
+  .curriculo {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .advogada-bio .btn-adv {
     display: block;
     margin: 0 auto 20px;
@@ -541,6 +550,10 @@ main.pagina-inicial h2 {
   vertical-align: middle;
 }
 
+.modal-content {
+  background: #f3f3f3;
+}
+
 .modal-body {
   width: 95%;
 }
@@ -551,12 +564,15 @@ main.pagina-inicial h2 {
 
 .modal-body h1 {
   color: #710000;
-  font-size: 1.6em;
+  font-size: 25px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .modal-body p {
   color: #7d7d80;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 /* NOTÍCIAS */
