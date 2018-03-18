@@ -45,7 +45,7 @@ a:hover {
 
 h1.titulo,
 h1.titulo-mobile {
-  color: #710000;
+  color: #6e131d;
   font-size: 3.214em;
   font-weight: 700;
   text-transform: uppercase;
@@ -57,11 +57,11 @@ h1.titulo-mobile::after {
   display: table;
   width: 200px;
   height: 5px;
-  background: #710000;
+  background: #6e131d;
 }
 
 h3, h4 {
-  color: #710000;
+  color: #6e131d;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -106,8 +106,12 @@ h3, h4 {
 /* BARRA DE NAVEGAÇÃO */
 
 nav {
-  background: #710000;
+  background: #6e131d;
   color: #fff;
+}
+
+.navbar {
+  border-radius: 0px;
 }
 
 .nav>li>a,
@@ -238,13 +242,6 @@ nav .navbar-collapse {
 
 
 /* PAGINA INICIAL */
-
-main.pagina-inicial {
-  background: linear-gradient( rgba(113, 0, 0, 0.5), rgba(113, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1453945619913-79ec89a82c51?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b7a043b4a4d259543a830e670a3f54c&auto=format&fit=crop&w=1950&q=80') no-repeat center;
-  background-size: cover;  
-  height: 1000px;
-  min-height: 100vh;
-}
 
 main.pagina-inicial h2 {
   color: #fff;
@@ -501,7 +498,7 @@ main.pagina-inicial h2 {
 
 .atuacao h3::after,
 .atuacao h4::after {
-  background: #710000;
+  background: #6e131d;
   content: '';
   display: table;
   height: 5px;
@@ -563,7 +560,7 @@ main.pagina-inicial h2 {
 }
 
 .modal-body h1 {
-  color: #710000;
+  color: #6e131d;
   font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
@@ -852,14 +849,14 @@ main.pagina-inicial h2 {
 }
 
 .titulo-post {
-  color: #710000;
+  color: #6e131d;
   font-size: 3.214em;
   padding-bottom: 30px;
 }
 
 .posts .btn-adv {
-  color: #710000;
-  border-color: #710000;
+  color: #6e131d;
+  border-color: #6e131d;
 }
 
 @media only screen and (max-width: 991px) {
