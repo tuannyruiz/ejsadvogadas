@@ -549,14 +549,34 @@ main.pagina-inicial h2 {
 
 .modal-content {
   background: #f3f3f3;
+  border-radius: 0;
 }
 
 .modal-body {
   width: 95%;
 }
 
-.button.close {
+.modal-header .close {
+  margin-top: -16px;
+  background: #6e131d;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-right: -16px;
+}
+
+.close {
   font-size: 25px;
+  opacity: 1;
+  color: #fff;
+  font-weight: 300;
+}
+
+.close:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
 }
 
 .modal-body h1 {
@@ -570,6 +590,22 @@ main.pagina-inicial h2 {
   color: #7d7d80;
   font-size: 19px;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modal-body h1 {
+    font-size: 20px;
+  }
+  
+  .modal-body p {
+    font-size: 16px;
+  }
 }
 
 /* NOTÍCIAS */
