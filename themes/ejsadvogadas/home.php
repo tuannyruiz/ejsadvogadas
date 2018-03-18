@@ -20,12 +20,23 @@ $img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ), false);
         min-height: 80vh;
     }
 
-    @media only screen and (max-width: 450px) { 
+
+    @media only screen and (max-width: 767px) {
         main.pagina-inicial {
             background: linear-gradient( rgba(113, 0, 0, 0.5),
             rgba(113, 0, 0, 0.5) ),
             url('<?php echo $img_mobile[0] ?>')
             no-repeat center;  
+            background-size: cover;  
+        }
+    }
+
+    @media only screen and (max-width: 450px) { 
+        main.pagina-inicial {
+            /* background: linear-gradient( rgba(113, 0, 0, 0.5),
+            rgba(113, 0, 0, 0.5) ),
+            url('<?php echo $img_mobile[0] ?>')
+            no-repeat center;   */
             background-size: cover;  
             height: 400px;
             min-height: 40vh;
