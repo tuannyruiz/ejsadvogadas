@@ -583,7 +583,10 @@ main.pagina-inicial h2 {
   border: 1px solid #000;
   max-height: 200px;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
+
 .lateral .noticia img {
   max-height: 120px;
   margin-bottom: 10px;
@@ -600,6 +603,8 @@ main.pagina-inicial h2 {
   border: 1px solid #000;
   float: left;
   max-width: 40%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .lateral .noticia h3 {
@@ -671,8 +676,6 @@ main.pagina-inicial h2 {
   
 }
 
-
-
 @media only screen and (max-width: 767px) {
   .lateral .noticia h3,
   .destaque .noticia h3 {
@@ -689,6 +692,10 @@ main.pagina-inicial h2 {
   }
   div.noticia img, div.lateral div.noticia img  {
     max-height: 300px !important;
+    object-fit: cover; 
+    object-position: center; 
+    height: 100%;
+    width: 100%;
   }
 }
 

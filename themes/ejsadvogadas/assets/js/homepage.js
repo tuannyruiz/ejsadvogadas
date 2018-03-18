@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(document).scroll(function() { 
       scroll_pos = $(this).scrollTop();
       if(scroll_pos > 250) {
-        $("nav.navbar-fixed-top").css({'background-color': '#710000', 'transition': 'all 1s ease'});
+        $("nav.navbar-fixed-top").css({'background-color': '#6e131d', 'transition': 'all 1s ease'});
       } else {
         $("nav.navbar-fixed-top").css('background-color', 'transparent');
       }
