@@ -5,7 +5,7 @@
  */
 $topFix = true;
 require_once('header.php'); 
-$img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ));
+$img_mobile =  wp_get_attachment_image_src( SCF::get( 'img_mobile' ), false);
 ?>
 
 <style>
