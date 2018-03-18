@@ -21,14 +21,29 @@ require_once('header.php');  ?>
 </p>
   
 		<div class="row cards">
-			<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
-				<div class="atuacao-card">
-					<img class="img-destaque" src="<?php echo $cartao_topo_img_1[0] ?>"  />
-          <img class="img-destaque" src="<?php echo $cartao_topo_img_2[0] ?>" alt="" />
-          <img class="img-destaque--ultima" src="<?php echo $cartao_topo_img_3[0] ?>" alt="" />
-					
-          <h3><?php echo $cartao_topo_title ?></h3>
-          <?php echo $cartao_topo_desc ?>
+			<div class="card-custom col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12">
+				<div class="card-container-top">
+					<div class="atuacao-card">
+						<img class="img-destaque" src="<?php echo $cartao_topo_img_1[0] ?>"  />
+	      				<img class="img-destaque" src="<?php echo $cartao_topo_img_2[0] ?>" alt="" />
+	          			<img class="img-destaque--ultima" src="<?php echo $cartao_topo_img_3[0] ?>" alt="" />
+	          			<h3><?php echo $cartao_topo_title ?></h3>
+	          			<?php echo $cartao_topo_desc ?>
+					</div>
+				</div>
+				<div class="modal fade modal-custom modal-dialog-centered" tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+			    			<div class="modal-content">
+				      			<div class="modal-header">
+				        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<div class="modal-body">
+										<?php echo $description_card_top ?>
+									</div>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -62,23 +77,21 @@ require_once('header.php');  ?>
 					</div>
 				</div>
 				<div class="modal fade modal-custom modal-dialog-centered" tabindex="-1" role="dialog">
-				
-				<div class="modal-dialog" role="document">
-    			<div class="modal-content">
-      			<div class="modal-header">
-        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							<div class="modal-body">
-							<h1><?php echo $r_title ?></h1>
-							<?php echo $r_description ?>
+						<div class="modal-dialog" role="document">
+			    			<div class="modal-content">
+				      			<div class="modal-header">
+				        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<div class="modal-body">
+										<h1><?php echo $r_title ?></h1>
+										<?php echo $r_description ?>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 				</div>
-
-				</div>
-			</div>
+	</div>
 
 		
 			<?php 	
